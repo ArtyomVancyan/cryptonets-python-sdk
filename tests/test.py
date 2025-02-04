@@ -7,15 +7,15 @@ import os
 from PIL import Image
 from termcolor import colored
 
-src_path = pathlib.Path(__file__).parent.parent.resolve()
-sys.path.append(str(src_path))
+# src_path = pathlib.Path(__file__).parent.parent.resolve()
+# sys.path.append(str(src_path))
 import numpy as np
-from src.cryptonets_python_sdk.settings.configuration import ConfigObject
-from src.cryptonets_python_sdk.settings.configuration import PARAMETERS
-from src.cryptonets_python_sdk.factor import FaceFactor
-from src.cryptonets_python_sdk.settings.loggingLevel import LoggingLevel
-from src.cryptonets_python_sdk.settings.cacheType import CacheType
-from src.cryptonets_python_sdk.helper.utils import FaceValidationCode
+from cryptonets_python_sdk.settings.configuration import ConfigObject
+from cryptonets_python_sdk.settings.configuration import PARAMETERS
+from cryptonets_python_sdk.factor import FaceFactor
+from cryptonets_python_sdk.settings.loggingLevel import LoggingLevel
+from cryptonets_python_sdk.settings.cacheType import CacheType
+from cryptonets_python_sdk.helper.utils import FaceValidationCode
 
 
 def image_path_to_array(image_path: str) -> np.ndarray:
